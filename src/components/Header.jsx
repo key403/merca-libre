@@ -15,7 +15,7 @@ const Header = () => {
             <a href="/" className="relative text-xl flex items-center">
               <i className="ri-shake-hands-fill ri-3x text-white"></i>
               <i className="ri-shake-hands-line ri-3x absolute top-1/2 left-0 -translate-y-1/2"></i>
-              <h2 className=" text-lg leading-5">
+              <h2 className=" text-lg leading-5 font-semibold">
                 Merca <br /> Libre
               </h2>
             </a>

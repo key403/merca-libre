@@ -89,14 +89,14 @@ function App() {
 
   console.log(pais)
   return !pais ? (
-    <div className=" bg-[hsl(55,100%,54%)] min-h-screen flex flex-col">
+    <div className=" bg-[hsl(55,100%,54%)] min-h-screen flex flex-col font ">
       <div className="flex flex-col gap-4 py-8 lg:flex-row lg:justify-center lg:items-center lg:h-screen lg:gap-16">
         <div className="flex flex-col items-center">
           <div className="relative text-xl lg:text-5xl">
             <i className="ri-shake-hands-fill ri-3x text-white"></i>
             <i className="ri-shake-hands-line ri-3x absolute top-0 left-0 right-0 bottom-0"></i>
           </div>
-          <h1 className="text-center text-4xl font-medium font-serif lg:text-[66px] lg:leading-[60px]">Merca <br /> Libre</h1>
+          <h1 className="text-center text-4xl font-bold lg:text-[66px] lg:leading-[60px]">Merca <br /> Libre</h1>
         </div>
 
         <div className="w-full px-4 lg:w-auto">

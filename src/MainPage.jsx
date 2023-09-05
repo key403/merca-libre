@@ -41,14 +41,18 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const MainPage = ({ country }) => {
   return (
-    <div className="bg-slate-200 overflow-x-hidden">
+    <div className="bg-slate-200 overflow-x-hidden font">
       <Header />
       <div className=" mb-10">
         <Swiper
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
           slidesPerView={1}
           spaceBetween={30}
           loop={true}
@@ -56,7 +60,7 @@ const MainPage = ({ country }) => {
             clickable: true,
           }}
           navigation={true}
-          modules={[Pagination, Navigation]}
+          modules={[Pagination, Navigation, Autoplay]}
           className="h-[400px]"
         >
           <SwiperSlide className="relative">
